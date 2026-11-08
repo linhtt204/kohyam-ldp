@@ -1,0 +1,50 @@
+/* Koh Yam colour tokens — from Koh-Yam-Design-System/tokens.css (Visual Guideline 2021 + approved additions) */
+:root{
+/* Base palette — Nhà Koh */
+--koh-green-900:#293d1f;--koh-green-700:#456534;--koh-green-500:#8a9675;--koh-green-200:#d7d8cd;--koh-green-100:#ebece5;
+--koh-gold-500:#d8a459;--koh-gold-700:#8a5f22;--koh-sand-200:#e7c899;
+--koh-brown-900:#28231c;--koh-brown-600:#6b5e50;
+--koh-grey-500:#9a9a95;--koh-grey-300:#cbcac8;
+--koh-cream-50:#fcf7ef;--koh-cream-100:#f8ecdd;
+--koh-terracotta-500:#be5d38;--koh-chili-700:#9a2220;
+--koh-coral-400:#c06052;--koh-coral-600:#a5493d;--koh-peach-300:#d39476;
+--koh-blue-300:#b2bfcd;--koh-blue-100:#e1e8f6;
+--koh-pink-300:#eba7b8;--koh-pink-700:#a8435f;
+/* Islands (Đảo) — main / alt / on / ink */
+--island-giang-vo:#b5501f;--island-giang-vo-alt:var(--koh-green-700);--island-giang-vo-on:#fcf7ef;--island-giang-vo-ink:#b5501f;
+--island-quang-trung-34a:#b8322a;--island-quang-trung-34a-alt:var(--koh-green-700);--island-quang-trung-34a-on:#fcf7ef;--island-quang-trung-34a-ink:#b8322a;
+--island-quang-trung-2d:#f1cfc6;--island-quang-trung-2d-alt:var(--koh-green-200);--island-quang-trung-2d-on:#6e4630;--island-quang-trung-2d-ink:#6e4630;
+--island-ba-trieu:var(--koh-sand-200);--island-ba-trieu-alt:#7a4e33;--island-ba-trieu-on:var(--koh-brown-900);--island-ba-trieu-ink:#7a4e33;
+--island-ho-tung-mau:var(--koh-blue-300);--island-ho-tung-mau-alt:var(--koh-blue-100);--island-ho-tung-mau-on:var(--koh-brown-900);--island-ho-tung-mau-ink:#5e7085;
+--island-ba-huyen-thanh-quan:var(--koh-coral-400);--island-ba-huyen-thanh-quan-alt:var(--koh-peach-300);--island-ba-huyen-thanh-quan-on:#fcf7ef;--island-ba-huyen-thanh-quan-ink:var(--koh-coral-600);
+/* Seasons (Mùa) — aliases only, never new colours */
+--campaign-trungthu:var(--koh-gold-500);--campaign-songkran:var(--koh-blue-300);--campaign-songkran-light:var(--koh-blue-100);--campaign-sinhnhat:var(--koh-gold-500);--campaign-tet:var(--koh-chili-700);
+}
+/* Theme A · Nền kem (default) */
+:root,[data-theme="kem"]{
+--surface:#fcf7ef;--surface-alt:#f8ecdd;--surface-sunken:#efe0c8;
+--ink:#28231c;--ink-muted:#6b5e50;
+--brand:#456534;--highlight:#8a5f22;--cta:#456534;--on-cta:#fcf7ef;
+--promo:#9a2220;--on-promo:#fcf7ef;--line:#e7c899;--focus-ring:#456534;
+}
+/* Theme A · Nền xanh — promos, events, posters */
+[data-theme="xanh"]{
+--surface:#293d1f;--surface-alt:#456534;--surface-sunken:#1f2f17;
+--ink:#f8ecdd;--ink-muted:#d7d8cd;
+--brand:#d8a459;--highlight:#d8a459;--cta:#d8a459;--on-cta:#28231c;
+--promo:#9a2220;--on-promo:#fcf7ef;--line:#8a9675;--focus-ring:#d8a459;
+}
+/* Theme B · Trung tính kem (kept for comparison) */
+[data-theme="b-kem"]{
+--surface:#fcf7ef;--surface-alt:#f8ecdd;--surface-sunken:#efe0c8;
+--ink:#28231c;--ink-muted:#6b5e50;
+--brand:#28231c;--highlight:#8a5f22;--cta:#28231c;--on-cta:#fcf7ef;
+--promo:#9a2220;--on-promo:#fcf7ef;--line:#e7c899;--focus-ring:#28231c;
+}
+/* Theme B · Trung tính nâu */
+[data-theme="b-nau"]{
+--surface:#28231c;--surface-alt:#3a3229;--surface-sunken:#1e1a15;
+--ink:#f8ecdd;--ink-muted:#cbcac8;
+--brand:#d8a459;--highlight:#d8a459;--cta:#d8a459;--on-cta:#28231c;
+--promo:#9a2220;--on-promo:#fcf7ef;--line:#4a4036;--focus-ring:#d8a459;
+}

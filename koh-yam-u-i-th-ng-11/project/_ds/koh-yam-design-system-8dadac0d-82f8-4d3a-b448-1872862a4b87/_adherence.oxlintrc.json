@@ -1,0 +1,413 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "components/actions/**",
+              "components/brand/**",
+              "components/content/**",
+              "components/social/**",
+              "ui_kits/social-posts/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Montserrat Alternates|Allison|Montserrat))/i]",
+        "message": "Font not provided by the design system. Available: Montserrat Alternates, Allison, Montserrat."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CTAButton'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|size|label|small|href|children|onClick|key|ref|className|style|children)$/]",
+        "message": "<CTAButton> doesn't accept that prop. Declared props: variant, size, label, small, href, children, onClick."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CTAButton'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:primary|outline|stack)$/]",
+        "message": "<CTAButton> variant must be one of 'primary' | 'outline' | 'stack'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='CTAButton'] > JSXAttribute[name.name='size'] > Literal[value!=/^(?:md|sm)$/]",
+        "message": "<CTAButton> size must be one of 'md' | 'sm'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Island'] > JSXAttribute > JSXIdentifier[name!=/^(?:slug|name|addr|tone|status|key|ref|className|style|children)$/]",
+        "message": "<Island> doesn't accept that prop. Declared props: slug, name, addr, tone, status."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='IslandStamp'] > JSXAttribute > JSXIdentifier[name!=/^(?:island|kicker|name|sub|date|tilt|key|ref|className|style|children)$/]",
+        "message": "<IslandStamp> doesn't accept that prop. Declared props: island, kicker, name, sub, date, tilt."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='IslandStamp'] > JSXAttribute[name.name='island'] > Literal[value!=/^(?:giang-vo|quang-trung-34a|quang-trung-2d|ba-trieu|ho-tung-mau|ba-huyen-thanh-quan)$/]",
+        "message": "<IslandStamp> island must be one of 'giang-vo' | 'quang-trung-34a' | 'quang-trung-2d' | 'ba-trieu' | 'ho-tung-mau' | 'ba-huyen-thanh-quan'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='LandmarkCard'] > JSXAttribute > JSXIdentifier[name!=/^(?:landmark|kicker|name|dish|quote|rows|key|ref|className|style|children)$/]",
+        "message": "<LandmarkCard> doesn't accept that prop. Declared props: landmark, kicker, name, dish, quote, rows."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='LandmarkCard'] > JSXAttribute[name.name='landmark'] > Literal[value!=/^(?:suoi-thao-moc|bien-do|nui-lua|song-bang|rung-gion)$/]",
+        "message": "<LandmarkCard> landmark must be one of 'suoi-thao-moc' | 'bien-do' | 'nui-lua' | 'song-bang' | 'rung-gion'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='LocationTag'] > JSXAttribute > JSXIdentifier[name!=/^(?:island|children|key|ref|className|style|children)$/]",
+        "message": "<LocationTag> doesn't accept that prop. Declared props: island, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Logo'] > JSXAttribute > JSXIdentifier[name!=/^(?:layout|tagline|ink|height|tab|tabBg|assetBase|src|key|ref|className|style|children)$/]",
+        "message": "<Logo> doesn't accept that prop. Declared props: layout, tagline, ink, height, tab, tabBg, assetBase, src."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Logo'] > JSXAttribute[name.name='layout'] > Literal[value!=/^(?:stacked|horizontal)$/]",
+        "message": "<Logo> layout must be one of 'stacked' | 'horizontal'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Logo'] > JSXAttribute[name.name='ink'] > Literal[value!=/^(?:brown|gold|cream)$/]",
+        "message": "<Logo> ink must be one of 'brown' | 'gold' | 'cream'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='PatternBand'] > JSXAttribute > JSXIdentifier[name!=/^(?:pattern|height|opacity|background|position|assetBase|key|ref|className|style|children)$/]",
+        "message": "<PatternBand> doesn't accept that prop. Declared props: pattern, height, opacity, background, position, assetBase."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Postmark'] > JSXAttribute > JSXIdentifier[name!=/^(?:top|bottom|center|color|size|key|ref|className|style|children)$/]",
+        "message": "<Postmark> doesn't accept that prop. Declared props: top, bottom, center, color, size."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='PromoTag'] > JSXAttribute > JSXIdentifier[name!=/^(?:size|children|key|ref|className|style|children)$/]",
+        "message": "<PromoTag> doesn't accept that prop. Declared props: size, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='PromoTag'] > JSXAttribute[name.name='size'] > Literal[value!=/^(?:md|sm)$/]",
+        "message": "<PromoTag> size must be one of 'md' | 'sm'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SocialPost'] > JSXAttribute > JSXIdentifier[name!=/^(?:layout|photo|title|caption|cta|ctaSmall|island|address|size|assetBase|children|key|ref|className|style|children)$/]",
+        "message": "<SocialPost> doesn't accept that prop. Declared props: layout, photo, title, caption, cta, ctaSmall, island, address, size, assetBase, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SocialPost'] > JSXAttribute[name.name='layout'] > Literal[value!=/^(?:xanh|kem)$/]",
+        "message": "<SocialPost> layout must be one of 'xanh' | 'kem'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SoSanhPhuongAn'] > JSXAttribute > JSXIdentifier[name!=/^(?:pick|key|ref|className|style|children)$/]",
+        "message": "<SoSanhPhuongAn> doesn't accept that prop. Declared props: pick."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SoSanhPhuongAn'] > JSXAttribute[name.name='pick'] > Literal[value!=/^(?:A|B)$/]",
+        "message": "<SoSanhPhuongAn> pick must be one of 'A' | 'B'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='StampLogo'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|island|tilt|logoHeight|tagline|assetBase|children|key|ref|className|style|children)$/]",
+        "message": "<StampLogo> doesn't accept that prop. Declared props: variant, island, tilt, logoHeight, tagline, assetBase, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='StampLogo'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:gold|cream|green|island)$/]",
+        "message": "<StampLogo> variant must be one of 'gold' | 'cream' | 'green' | 'island'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='StampLogo'] > JSXAttribute[name.name='island'] > Literal[value!=/^(?:giang-vo|quang-trung-34a|quang-trung-2d|ba-trieu|ho-tung-mau|ba-huyen-thanh-quan)$/]",
+        "message": "<StampLogo> island must be one of 'giang-vo' | 'quang-trung-34a' | 'quang-trung-2d' | 'ba-trieu' | 'ho-tung-mau' | 'ba-huyen-thanh-quan'."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {
+      "CTAButton": {
+        "replaces": []
+      },
+      "Island": {
+        "replaces": []
+      },
+      "IslandStamp": {
+        "replaces": []
+      },
+      "LandmarkCard": {
+        "replaces": []
+      },
+      "LocationTag": {
+        "replaces": []
+      },
+      "Logo": {
+        "replaces": []
+      },
+      "PatternBand": {
+        "replaces": []
+      },
+      "Postmark": {
+        "replaces": []
+      },
+      "PromoTag": {
+        "replaces": []
+      },
+      "SocialPost": {
+        "replaces": []
+      },
+      "SoSanhPhuongAn": {
+        "replaces": []
+      },
+      "StampLogo": {
+        "replaces": []
+      }
+    },
+    "tokens": [
+      "--brand",
+      "--campaign-sinhnhat",
+      "--campaign-songkran",
+      "--campaign-songkran-light",
+      "--campaign-tet",
+      "--campaign-trungthu",
+      "--cta",
+      "--focus-ring",
+      "--font-display",
+      "--font-script",
+      "--font-text",
+      "--highlight",
+      "--hole",
+      "--ink",
+      "--ink-muted",
+      "--island",
+      "--island-alt",
+      "--island-ba-huyen-thanh-quan",
+      "--island-ba-huyen-thanh-quan-alt",
+      "--island-ba-huyen-thanh-quan-ink",
+      "--island-ba-huyen-thanh-quan-on",
+      "--island-ba-trieu",
+      "--island-ba-trieu-alt",
+      "--island-ba-trieu-ink",
+      "--island-ba-trieu-on",
+      "--island-giang-vo",
+      "--island-giang-vo-alt",
+      "--island-giang-vo-ink",
+      "--island-giang-vo-on",
+      "--island-ho-tung-mau",
+      "--island-ho-tung-mau-alt",
+      "--island-ho-tung-mau-ink",
+      "--island-ho-tung-mau-on",
+      "--island-on",
+      "--island-quang-trung-2d",
+      "--island-quang-trung-2d-alt",
+      "--island-quang-trung-2d-ink",
+      "--island-quang-trung-2d-on",
+      "--island-quang-trung-34a",
+      "--island-quang-trung-34a-alt",
+      "--island-quang-trung-34a-ink",
+      "--island-quang-trung-34a-on",
+      "--koh-blue-100",
+      "--koh-blue-300",
+      "--koh-brown-600",
+      "--koh-brown-900",
+      "--koh-chili-700",
+      "--koh-coral-400",
+      "--koh-coral-600",
+      "--koh-cream-100",
+      "--koh-cream-50",
+      "--koh-gold-500",
+      "--koh-gold-700",
+      "--koh-green-100",
+      "--koh-green-200",
+      "--koh-green-500",
+      "--koh-green-700",
+      "--koh-green-900",
+      "--koh-grey-300",
+      "--koh-grey-500",
+      "--koh-peach-300",
+      "--koh-pink-300",
+      "--koh-pink-700",
+      "--koh-sand-200",
+      "--koh-terracotta-500",
+      "--land",
+      "--land-on",
+      "--line",
+      "--on-cta",
+      "--on-promo",
+      "--photo-frame",
+      "--pin",
+      "--pitch",
+      "--post",
+      "--promo",
+      "--radius-lg",
+      "--radius-md",
+      "--radius-pill",
+      "--radius-sm",
+      "--shadow-sticker",
+      "--space-1",
+      "--space-12",
+      "--space-16",
+      "--space-2",
+      "--space-3",
+      "--space-4",
+      "--space-6",
+      "--space-8",
+      "--stamp-bg",
+      "--stamp-ink",
+      "--surface",
+      "--surface-alt",
+      "--surface-sunken",
+      "--type-body",
+      "--type-body-lg",
+      "--type-body-strong",
+      "--type-caption",
+      "--type-cta",
+      "--type-eyebrow",
+      "--type-h1",
+      "--type-h2",
+      "--type-h3",
+      "--type-hero",
+      "--type-hero-light",
+      "--type-label",
+      "--type-promo-number",
+      "--type-script-lg",
+      "--type-script-xl"
+    ],
+    "tokenKinds": {
+      "--koh-green-900": "color",
+      "--koh-green-700": "color",
+      "--koh-green-500": "color",
+      "--koh-green-200": "color",
+      "--koh-green-100": "color",
+      "--koh-gold-500": "color",
+      "--koh-gold-700": "color",
+      "--koh-sand-200": "color",
+      "--koh-brown-900": "color",
+      "--koh-brown-600": "color",
+      "--koh-grey-500": "color",
+      "--koh-grey-300": "color",
+      "--koh-cream-50": "color",
+      "--koh-cream-100": "color",
+      "--koh-terracotta-500": "color",
+      "--koh-chili-700": "color",
+      "--koh-coral-400": "color",
+      "--koh-coral-600": "color",
+      "--koh-peach-300": "color",
+      "--koh-blue-300": "color",
+      "--koh-blue-100": "color",
+      "--koh-pink-300": "color",
+      "--koh-pink-700": "color",
+      "--island-giang-vo": "color",
+      "--island-giang-vo-alt": "color",
+      "--island-giang-vo-on": "color",
+      "--island-giang-vo-ink": "color",
+      "--island-quang-trung-34a": "color",
+      "--island-quang-trung-34a-alt": "color",
+      "--island-quang-trung-34a-on": "color",
+      "--island-quang-trung-34a-ink": "color",
+      "--island-quang-trung-2d": "color",
+      "--island-quang-trung-2d-alt": "color",
+      "--island-quang-trung-2d-on": "color",
+      "--island-quang-trung-2d-ink": "color",
+      "--island-ba-trieu": "color",
+      "--island-ba-trieu-alt": "color",
+      "--island-ba-trieu-on": "color",
+      "--island-ba-trieu-ink": "color",
+      "--island-ho-tung-mau": "color",
+      "--island-ho-tung-mau-alt": "color",
+      "--island-ho-tung-mau-on": "color",
+      "--island-ho-tung-mau-ink": "color",
+      "--island-ba-huyen-thanh-quan": "color",
+      "--island-ba-huyen-thanh-quan-alt": "color",
+      "--island-ba-huyen-thanh-quan-on": "color",
+      "--island-ba-huyen-thanh-quan-ink": "color",
+      "--campaign-trungthu": "color",
+      "--campaign-songkran": "color",
+      "--campaign-songkran-light": "color",
+      "--campaign-sinhnhat": "color",
+      "--campaign-tet": "color",
+      "--surface": "color",
+      "--surface-alt": "color",
+      "--surface-sunken": "color",
+      "--ink": "color",
+      "--ink-muted": "color",
+      "--brand": "color",
+      "--highlight": "color",
+      "--cta": "color",
+      "--on-cta": "color",
+      "--promo": "color",
+      "--on-promo": "color",
+      "--line": "color",
+      "--focus-ring": "color",
+      "--font-display": "font",
+      "--font-text": "font",
+      "--font-script": "font",
+      "--type-promo-number": "font",
+      "--type-hero": "font",
+      "--type-hero-light": "font",
+      "--type-h1": "font",
+      "--type-h2": "font",
+      "--type-h3": "font",
+      "--type-cta": "font",
+      "--type-eyebrow": "font",
+      "--type-body-lg": "font",
+      "--type-body": "font",
+      "--type-body-strong": "font",
+      "--type-caption": "font",
+      "--type-label": "font",
+      "--type-script-xl": "font",
+      "--type-script-lg": "font",
+      "--space-1": "spacing",
+      "--space-2": "spacing",
+      "--space-3": "spacing",
+      "--space-4": "spacing",
+      "--space-6": "spacing",
+      "--space-8": "spacing",
+      "--space-12": "spacing",
+      "--space-16": "spacing",
+      "--radius-sm": "radius",
+      "--radius-md": "radius",
+      "--radius-lg": "radius",
+      "--radius-pill": "radius",
+      "--shadow-sticker": "shadow",
+      "--photo-frame": "color",
+      "--island": "color",
+      "--island-alt": "color",
+      "--island-on": "color",
+      "--stamp-ink": "color",
+      "--pin": "color",
+      "--stamp-bg": "color",
+      "--hole": "spacing",
+      "--pitch": "spacing",
+      "--land": "color",
+      "--land-on": "color",
+      "--post": "spacing"
+    },
+    "fontFamilies": [
+      "Allison",
+      "Montserrat",
+      "Montserrat Alternates"
+    ]
+  }
+}

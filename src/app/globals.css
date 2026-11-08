@@ -1,0 +1,67 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* The sticky header wraps onto several rows on narrow screens; keep anchor targets clear of it. */
+@media (max-width: 800px) {
+  html {
+    scroll-padding-top: 110px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--koh-cream-50);
+  color: var(--koh-brown-900);
+  font-family: var(--font-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--koh-green-700);
+  text-decoration: none;
+}
+
+a:not(.ky-cta):hover {
+  color: var(--koh-green-900);
+  text-decoration: underline;
+}
+
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+/* CTA states, as recommended by the design system: darken on hover, sticker pressed flat on press. */
+.ky-cta {
+  transition: filter 150ms;
+}
+
+.ky-cta:hover {
+  filter: brightness(0.9);
+}
+
+.ky-cta:active {
+  box-shadow: none;
+}
+
+.ky-cta--outline:active {
+  box-shadow: inset 0 0 0 2px var(--brand);
+}

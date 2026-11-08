@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Ưu đãi tháng 11 · Koh Yam</title>
+  <link rel="stylesheet" href="_ds/koh-yam-design-system-8dadac0d-82f8-4d3a-b448-1872862a4b87/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/koh-yam-design-system-8dadac0d-82f8-4d3a-b448-1872862a4b87/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/koh-yam-design-system-8dadac0d-82f8-4d3a-b448-1872862a4b87/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/koh-yam-design-system-8dadac0d-82f8-4d3a-b448-1872862a4b87/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/koh-yam-design-system-8dadac0d-82f8-4d3a-b448-1872862a4b87/tokens/brand-classes.css">
+  <link rel="stylesheet" href="_ds/koh-yam-design-system-8dadac0d-82f8-4d3a-b448-1872862a4b87/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+  <script>window.KOHYAM_ASSETS = "assets/";</script>
+  <script src="_ds/koh-yam-design-system-8dadac0d-82f8-4d3a-b448-1872862a4b87/_ds_bundle.js"></script>
+  <template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#456534"></rect><text x="50" y="62" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="34" fill="#d8a459">11</text></svg></template>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #fcf7ef; color: #28231c; font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #456534; text-decoration: none; }
+    a:hover { color: #293d1f; text-decoration: underline; }
+    details > summary { list-style: none; cursor: pointer; }
+    details > summary::-webkit-details-marker { display: none; }
+    button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px solid #456534; outline-offset: 3px; }
+  </style>
+</helmet>
+
+<div style="min-height: 100vh; background: var(--koh-cream-50); color: var(--koh-brown-900);">
+
+  <!-- Header -->
+  <header style="position: sticky; top: 0; z-index: 20; background: var(--koh-cream-50); box-shadow: 0 1px 0 var(--koh-sand-200);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;">
+      <a href="#top" style="display: flex; align-items: center;">
+        <x-import component-from-global-scope="KohYamDesignSystem_8dadac.Logo" layout="horizontal" ink="brown" height="{{ 30 }}" hint-size="140px,30px"></x-import>
+      </a>
+      <nav style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap; font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: .06em; text-transform: uppercase;">
+        <a href="#uu-dai" style="color: var(--koh-brown-900);">Ưu đãi</a>
+        <a href="#lich" style="color: var(--koh-brown-900);">Lịch tháng 11</a>
+        <a href="#dao" style="color: var(--koh-brown-900);">Theo đảo</a>
+        <a href="#dieu-kien" style="color: var(--koh-brown-900);">Điều kiện</a>
+        <x-import component-from-global-scope="KohYamDesignSystem_8dadac.CTAButton" size="sm" label="Đặt bàn ngay" href="#dat-ban" hint-size="140px,36px"></x-import>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" data-theme="{{ heroTheme }}" data-screen-label="Hero" style="background: var(--surface); color: var(--ink); position: relative; overflow: hidden;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 88px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 56px; align-items: center;">
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <div style="font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--highlight);">Ưu đãi tháng 11 · 2026</div>
+        <h1 style="margin: 0; font-family: 'Montserrat Alternates', sans-serif; font-weight: 300; font-size: clamp(40px, 6vw, 72px); line-height: 1.15; letter-spacing: -0.01em; text-wrap: balance;">Tháng 11, Koh nêm <span style="font-family: 'Allison', cursive; font-weight: 400; font-size: 1.45em; color: var(--brand); line-height: .8;">ưu đãi</span> vừa miệng</h1>
+        <p style="margin: 0; max-width: 520px; font-size: 18px; font-weight: 500; line-height: 1.5; color: var(--ink-muted); text-wrap: pretty;">8 chương trình chung cho cả quần đảo, thêm 6 món quà riêng ở từng đảo Koh. Từ bữa trưa văn phòng tới bàn tiệc sinh nhật — bạn chọn, Koh lo phần nêm.</p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <x-import component-from-global-scope="KohYamDesignSystem_8dadac.CTAButton" label="Xem ưu đãi" href="#uu-dai" hint-size="160px,48px"></x-import>
+          <x-import component-from-global-scope="KohYamDesignSystem_8dadac.CTAButton" variant="outline" label="Đặt bàn ngay" href="#dat-ban" hint-size="170px,48px"></x-import>
+        </div>
+      </div>
+      <div style="position: relative; justify-self: center; width: 100%; max-width: 520px;">
+        <div style="border-radius: 32px; overflow: hidden; box-shadow: 0 0 0 6px var(--koh-cream-50); aspect-ratio: 4 / 3.4; background: var(--koh-cream-100);">
+          <img src="assets/photos/food-ban-tiec.jpg" alt="Bàn tiệc nhiều món Thái tại Koh Yam" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div style="position: absolute; top: -28px; right: -16px; transform: rotate(6deg); background: var(--koh-cream-50); border-radius: 50%; padding: 6px;">
+          <x-import component-from-global-scope="KohYamDesignSystem_8dadac.Postmark" top="Ưu đãi tháng" bottom="Koh Yam" center="11" color="#9a2220" size="{{ 128 }}" hint-size="128px,128px"></x-import>
+        </div>
+        <div style="position: absolute; left: -12px; bottom: 24px;">
+          <x-import component-from-global-scope="KohYamDesignSystem_8dadac.PromoTag">1 – 30/11 · Cả 6 đảo</x-import>
+        </div>
+      </div>
+    </div>
+    <div style="position: absolute; left: 0; right: 0; bottom: 0;">
+      <x-import component-from-global-scope="KohYamDesignSystem_8dadac.PatternBand" pattern="03" height="{{ 36 }}" opacity="{{ 0.5 }}" background="transparent" hint-size="100%,36px"></x-import>
+    </div>
+  </section>
+
+  <!-- All promos -->
+  <section id="uu-dai" data-screen-label="Ưu đãi" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 64px; display: flex; flex-direction: column; gap: 32px;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap;">
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--koh-gold-700);">Cả quần đảo</div>
+        <h2 style="margin: 0; font-family: 'Montserrat Alternates', sans-serif; font-weight: 500; font-size: clamp(30px, 4vw, 44px); line-height: 1.2;">Tất cả ưu đãi tháng 11</h2>
+      </div>
+      <div style="font-size: 14px; font-weight: 500; color: var(--koh-brown-600);">Đang xem {{ countLabel }}</div>
+    </div>
+
+    <div role="tablist" style="display: flex; gap: 8px; flex-wrap: wrap;">
+      <sc-for list="{{ chips }}" as="c" hint-placeholder-count="5">
+        <button role="tab" aria-selected="{{ c.active }}" onClick="{{ c.onClick }}" style="font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; padding: 10px 18px; border-radius: 999px; border: 0; cursor: pointer; display: flex; align-items: center; gap: 8px; background: {{ c.bg }}; color: {{ c.fg }}; box-shadow: {{ c.ring }}; transition: background 150ms;">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: {{ c.dot }};"></span>
+          <span>{{ c.label }}</span>
+          <span style="opacity: .7; font-weight: 600;">{{ c.count }}</span>
+        </button>
+      </sc-for>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 28px;">
+      <sc-for list="{{ visiblePromos }}" as="p" hint-placeholder-count="6">
+        <article id="{{ p.anchor }}" style="background: var(--koh-cream-50); border-radius: 14px; box-shadow: 0 0 0 1px var(--koh-sand-200), 0 3px 0 rgba(40,35,28,.18); overflow: hidden; display: flex; flex-direction: column;">
+          <sc-if value="{{ showPhotos }}" hint-placeholder-val="{{ true }}">
+            <div style="position: relative; aspect-ratio: 16 / 9; background: var(--koh-cream-100);">
+              <img src="{{ p.photo }}" alt="{{ p.title }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              <span style="position: absolute; top: 14px; left: 14px; padding: 5px 10px; border-radius: 6px; font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; background: {{ p.catColor }}; color: #fcf7ef;">{{ p.catLabel }}</span>
+            </div>
+          </sc-if>
+          <sc-if value="{{ hidePhotos }}" hint-placeholder-val="{{ false }}">
+            <div style="height: 8px; background: {{ p.catColor }};"></div>
+          </sc-if>
+          <div style="padding: 22px 22px 24px; display: flex; flex-direction: column; gap: 14px; flex: 1;">
+            <div style="align-self: flex-start;">
+              <x-import component-from-global-scope="KohYamDesignSystem_8dadac.PromoTag" size="sm" hint-size="200px,28px">{{ p.tag }}</x-import>
+            </div>
+            <h3 style="margin: 0; font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 22px; line-height: 1.25; text-wrap: balance;">{{ p.title }}</h3>
+            <p style="margin: 0; font-size: 15px; font-weight: 500; line-height: 1.5; color: var(--koh-brown-600); text-wrap: pretty;">{{ p.desc }}</p>
+            <dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 14px; line-height: 1.4; padding-top: 14px; border-top: 1px dashed var(--koh-sand-200);">
+              <dt style="font-weight: 700; color: var(--koh-brown-900);">Thời gian</dt>
+              <dd style="margin: 0; font-weight: 500;">{{ p.when }}</dd>
+              <dt style="font-weight: 700; color: var(--koh-brown-900);">Áp dụng</dt>
+              <dd style="margin: 0; font-weight: 500;">{{ p.where }}</dd>
+            </dl>
+            <details style="font-size: 13px; line-height: 1.45; color: var(--koh-brown-600);">
+              <summary style="font-weight: 700; color: var(--koh-green-700); font-size: 13px;">Xem điều kiện ▾</summary>
+              <p style="margin: 8px 0 0; font-weight: 500;">{{ p.cond }}</p>
+            </details>
+            <div style="margin-top: auto; padding-top: 6px; display: flex; gap: 10px; flex-wrap: wrap;">
+              <x-import component-from-global-scope="KohYamDesignSystem_8dadac.CTAButton" size="sm" label="{{ p.cta }}" href="#dat-ban" hint-size="150px,36px"></x-import>
+            </div>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Calendar -->
+  <sc-if value="{{ showCalendar }}" hint-placeholder-val="{{ true }}">
+    <section id="lich" data-screen-label="Lịch" style="background: var(--koh-cream-100);">
+      <div style="max-width: 1200px; margin: 0 auto; padding: 80px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 48px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--koh-gold-700);">Lịch tháng 11</div>
+            <h2 style="margin: 0; font-family: 'Montserrat Alternates', sans-serif; font-weight: 500; font-size: clamp(30px, 4vw, 44px); line-height: 1.2;">Hôm nào ghé, có gì ngon?</h2>
+            <p style="margin: 0; font-size: 15px; font-weight: 500; line-height: 1.5; color: var(--koh-brown-600);">Chạm vào một ngày để xem ưu đãi đang chạy.</p>
+          </div>
+          <div style="background: var(--koh-cream-50); border-radius: 14px; box-shadow: 0 0 0 1px var(--koh-sand-200), 0 3px 0 rgba(40,35,28,.18); padding: 20px;">
+            <div style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; margin-bottom: 8px;">
+              <sc-for list="{{ weekdays }}" as="w" hint-placeholder-count="7">
+                <div style="text-align: center; font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: .06em; color: var(--koh-brown-600); padding: 4px 0;">{{ w }}</div>
+              </sc-for>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px;">
+              <sc-for list="{{ cells }}" as="d" hint-placeholder-count="35">
+                <button onClick="{{ d.onClick }}" disabled="{{ d.empty }}" aria-label="{{ d.aria }}" style="aspect-ratio: 1; min-height: 44px; border: 0; border-radius: 10px; padding: 6px 4px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; cursor: {{ d.cursor }}; background: {{ d.bg }}; color: {{ d.fg }}; box-shadow: {{ d.ring }}; visibility: {{ d.vis }}; font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 15px; transition: background 150ms;">
+                  <span>{{ d.n }}</span>
+                  <span style="display: flex; gap: 3px; flex-wrap: wrap; justify-content: center;">
+                    <sc-for list="{{ d.dots }}" as="dot" hint-placeholder-count="0">
+                      <span style="width: 6px; height: 6px; border-radius: 50%; background: {{ dot }};"></span>
+                    </sc-for>
+                  </span>
+                </button>
+              </sc-for>
+            </div>
+            <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--koh-sand-200); font-size: 12px; font-weight: 600; color: var(--koh-brown-600);">
+              <sc-for list="{{ legend }}" as="l" hint-placeholder-count="4">
+                <span style="display: flex; align-items: center; gap: 6px;"><span style="width: 8px; height: 8px; border-radius: 50%; background: {{ l.color }};"></span>{{ l.label }}</span>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 16px; padding-top: 8px;">
+          <div style="display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;">
+            <div style="font-family: 'Montserrat Alternates', sans-serif; font-weight: 300; font-size: 56px; line-height: 1; color: var(--koh-green-700);">{{ selDayLabel }}</div>
+            <div style="font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--koh-brown-600);">{{ selDowLabel }} · {{ selCount }} ưu đãi</div>
+          </div>
+          <sc-for list="{{ dayPromos }}" as="p" hint-placeholder-count="3">
+            <a href="{{ p.href }}" style="display: grid; grid-template-columns: 6px 1fr; gap: 16px; align-items: stretch; background: var(--koh-cream-50); border-radius: 14px; box-shadow: 0 0 0 1px var(--koh-sand-200), 0 3px 0 rgba(40,35,28,.18); padding: 16px 18px; color: var(--koh-brown-900); text-decoration: none;">
+              <span style="border-radius: 3px; background: {{ p.catColor }};"></span>
+              <span style="display: flex; flex-direction: column; gap: 4px;">
+                <span style="font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 17px; line-height: 1.3;">{{ p.title }}</span>
+                <span style="font-size: 14px; font-weight: 500; color: var(--koh-brown-600);">{{ p.tag }} · {{ p.when }}</span>
+              </span>
+            </a>
+          </sc-for>
+          <sc-if value="{{ dayEmpty }}" hint-placeholder-val="{{ false }}">
+            <p style="margin: 0; font-size: 15px; font-weight: 500; color: var(--koh-brown-600);">Hôm nay chưa có chương trình chung — ghé thử ưu đãi riêng ở từng đảo nhé.</p>
+          </sc-if>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <!-- Islands -->
+  <section id="dao" data-theme="xanh" data-screen-label="Theo đảo" style="background: var(--koh-green-900); color: var(--koh-cream-100);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px;">
+      <div style="display: flex; flex-direction: column; gap: 8px; max-width: 640px;">
+        <div style="font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--koh-gold-500);">Riêng từng đảo</div>
+        <h2 style="margin: 0; font-family: 'Montserrat Alternates', sans-serif; font-weight: 300; font-size: clamp(30px, 4vw, 44px); line-height: 1.2;">Mỗi đảo Koh, một món quà <span style="font-family: 'Allison', cursive; font-weight: 400; font-size: 1.5em; color: var(--koh-gold-500); line-height: .8;">riêng</span></h2>
+        <p style="margin: 0; font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--koh-green-200);">Cộng thêm vào ưu đãi chung, chỉ có khi bạn ghé đúng đảo đó.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 24px;">
+        <sc-for list="{{ islands }}" as="i" hint-placeholder-count="6">
+          <article data-island="{{ i.slug }}" style="background: var(--koh-cream-50); color: var(--koh-brown-900); border-radius: 14px; box-shadow: 0 3px 0 rgba(0,0,0,.25); overflow: hidden; display: flex; flex-direction: column;">
+            <div style="height: 10px; background: {{ i.color }};"></div>
+            <div style="padding: 22px; display: flex; flex-direction: column; gap: 18px;">
+              <div style="display: flex; justify-content: flex-start; padding: 8px 0 0 8px;">
+                <x-import component-from-global-scope="KohYamDesignSystem_8dadac.IslandStamp" island="{{ i.slug }}" kicker="Đảo" name="{{ i.short }}" sub="{{ i.address }}" date="11 · 2026" hint-size="170px,130px"></x-import>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 10px; min-width: 0;">
+                <h3 style="margin: 0; font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 19px; line-height: 1.3;">{{ i.title }}</h3>
+                <p style="margin: 0; font-size: 14px; font-weight: 500; line-height: 1.5; color: var(--koh-brown-600);">{{ i.desc }}</p>
+                <div style="font-size: 13px; font-weight: 600; color: var(--koh-brown-600);">{{ i.when }}</div>
+                <x-import component-from-global-scope="KohYamDesignSystem_8dadac.LocationTag" island="{{ i.slug }}" hint-size="180px,30px">{{ i.address }}</x-import>
+              </div>
+            </div>
+          </article>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conditions -->
+  <section id="dieu-kien" data-screen-label="Điều kiện" style="max-width: 880px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 28px;">
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <div style="font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--koh-gold-700);">Điều kiện chung</div>
+      <h2 style="margin: 0; font-family: 'Montserrat Alternates', sans-serif; font-weight: 500; font-size: clamp(28px, 3.5vw, 40px); line-height: 1.2;">Nói trước cho rõ, ăn mới vui</h2>
+    </div>
+    <div style="display: flex; flex-direction: column; border-top: 1px solid var(--koh-sand-200);">
+      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="5">
+        <details style="border-bottom: 1px solid var(--koh-sand-200); padding: 18px 0;">
+          <summary style="display: flex; justify-content: space-between; gap: 16px; font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; font-size: 17px; line-height: 1.35;">
+            <span>{{ f.q }}</span>
+            <span style="color: var(--koh-green-700);">+</span>
+          </summary>
+          <p style="margin: 10px 0 0; font-size: 15px; font-weight: 500; line-height: 1.55; color: var(--koh-brown-600); text-wrap: pretty;">{{ f.a }}</p>
+        </details>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Booking CTA -->
+  <section id="dat-ban" data-screen-label="Đặt bàn" style="padding: 0 24px 88px;">
+    <div style="max-width: 1152px; margin: 0 auto; background: var(--koh-green-700); color: var(--koh-cream-50); border-radius: 32px; padding: 56px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 32px; align-items: center; position: relative; overflow: hidden;">
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <h2 style="margin: 0; font-family: 'Montserrat Alternates', sans-serif; font-weight: 300; font-size: clamp(30px, 4vw, 48px); line-height: 1.15;">Ghé Koh tháng này nhé</h2>
+        <p style="margin: 0; font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--koh-cream-100); max-width: 460px;">Đặt bàn trước để Koh giữ chỗ và chuẩn bị sẵn ưu đãi cho cả bàn. Nhắn mã ưu đãi khi đặt là được.</p>
+      </div>
+      <div data-theme="xanh" style="display: flex; flex-direction: column; gap: 14px; align-items: flex-start;">
+        <x-import component-from-global-scope="KohYamDesignSystem_8dadac.CTAButton" label="Đặt bàn ngay" href="#" hint-size="180px,48px"></x-import>
+        <div style="font-size: 15px; font-weight: 600; color: var(--koh-cream-100);">Hotline 1900 xxxx · Zalo OA Koh Yam</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background: var(--koh-green-900); color: var(--koh-green-200);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 40px 24px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap;">
+      <x-import component-from-global-scope="KohYamDesignSystem_8dadac.Logo" layout="horizontal" tagline="{{ true }}" ink="gold" height="{{ 40 }}" hint-size="220px,40px"></x-import>
+      <div style="font-size: 13px; font-weight: 500; line-height: 1.5;">Bếp Thái Koh Yam · Thai Kitchen &amp; Dessert · Hà Nội · TP.HCM<br>Ưu đãi áp dụng 01/11 – 30/11/2026, theo điều kiện từng chương trình.</div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;xanh&quot;,&quot;kem&quot;],&quot;default&quot;:&quot;xanh&quot;,&quot;tsType&quot;:&quot;'xanh'|'kem'&quot;,&quot;section&quot;:&quot;Giao diện&quot;},&quot;cardStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;photo&quot;,&quot;compact&quot;],&quot;default&quot;:&quot;photo&quot;,&quot;tsType&quot;:&quot;'photo'|'compact'&quot;,&quot;section&quot;:&quot;Giao diện&quot;},&quot;showCalendar&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Nội dung&quot;}}">
+const CATS = {
+  nhom: { label: 'Đi nhóm & tiệc', color: '#456534' },
+  ngaythuong: { label: 'Ngày thường', color: '#be5d38' },
+  dip: { label: 'Dịp đặc biệt', color: '#9a2220' },
+  giaohang: { label: 'Giao hàng', color: '#5e7085' }
+};
+const dow = d => (d - 1) % 7; // 1/11/2026 = Chủ nhật (0)
+const all = () => Array.from({ length: 30 }, (_, i) => i + 1);
+const byDow = arr => all().filter(d => arr.includes(dow(d)));
+const range = (a, b) => all().filter(d => d >= a && d <= b);
+const DOW_LABEL = ['Chủ nhật', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
+
+// ← Sửa dữ liệu ưu đãi ở đây
+const PROMOS = [
+  { id: 'nhom-4', cat: 'nhom', tag: 'Nhóm 4 người — tặng Gà lạnh', title: 'Đi 4 người, Gà lạnh Koh mời', desc: 'Bàn từ 4 người được tặng 1 đĩa Gà lạnh kèm sốt chấm nhà Koh: chua chanh trước, cay ớt sau.', when: 'Thứ 2 – Thứ 5 · cả tháng', where: 'Cả 6 đảo', cond: 'Hóa đơn từ 4 suất chính. Mỗi bàn 1 phần tặng. Không áp dụng cùng ưu đãi khác.', photo: 'assets/photos/food-ban-tiec.jpg', cta: 'Đặt bàn nhóm', days: byDow([1, 2, 3, 4]) },
+  { id: 'sinh-nhat', cat: 'nhom', tag: 'Sinh nhật — tặng xôi xoài', title: 'Sinh nhật tháng 11 ở nhà Koh', desc: 'Sinh tháng 11? Koh tặng 1 phần xôi xoài và cả quán hát mừng bằng tiếng Thái cho bạn.', when: '01 – 30/11', where: 'Cả 6 đảo', cond: 'Xuất trình giấy tờ có ngày sinh tháng 11. Đặt bàn trước ít nhất 1 ngày, bàn từ 4 người.', photo: 'assets/photos/interior-ghe-xanh-hong.jpg', cta: 'Đặt tiệc', days: all() },
+  { id: 'trua-vp', cat: 'ngaythuong', tag: 'Set trưa 129K', title: 'Trưa văn phòng, no tới chiều', desc: 'Cơm hoặc bún, 1 món yam và 1 trà Thái. Ra món trong 15 phút, kịp giờ quay lại bàn làm việc.', when: '11:00 – 14:00 · Thứ 2 – Thứ 6', where: 'Cả 6 đảo', cond: 'Chỉ áp dụng ăn tại quán. Món trong set có thể thay đổi theo ngày.', photo: 'assets/photos/food-bo-kho-thai.jpg', cta: 'Xem set trưa', days: byDow([1, 2, 3, 4, 5]) },
+  { id: 'thu-ba-cay', cat: 'ngaythuong', tag: 'Món cay cấp 3 — giảm 20%', title: 'Thứ Ba leo Núi Lửa', desc: 'Gọi món ở mức cay cấp 3 vào thứ Ba, Koh giảm 20% món đó. Leo tới đỉnh là hết sợ cay.', when: 'Mọi thứ Ba', where: 'Cả 6 đảo', cond: 'Giảm trên giá món cay cấp 3, tối đa 2 món mỗi bàn.', photo: 'assets/photos/food-bo-kho-thai.jpg', cta: 'Đặt bàn ngay', days: byDow([2]) },
+  { id: 'tra-chieu', cat: 'ngaythuong', tag: 'Trà Thái mua 1 tặng 1', title: 'Giờ trà chiều 15h – 17h', desc: 'Trà sữa Thái, trà chanh Thái: mua 1 tặng 1 cho khách ngồi tại quán. Thêm xôi xoài cho đủ vị.', when: '15:00 – 17:00 · Thứ 2 – Thứ 6', where: 'Cả 6 đảo', cond: 'Tặng món cùng loại hoặc giá thấp hơn. Không áp dụng mang đi.', photo: 'assets/photos/interior-chu-thai.jpg', cta: 'Ghé chiều nay', days: byDow([1, 2, 3, 4, 5]) },
+  { id: 'thay-co', cat: 'dip', tag: 'Thầy cô — giảm 11%', title: '20/11, Koh mời thầy cô', desc: 'Thầy cô và nhóm học trò đi cùng được giảm 11% tổng hóa đơn. Sawasdee khoo!', when: '18 – 20/11', where: 'Cả 6 đảo', cond: 'Xuất trình thẻ giáo viên hoặc giấy xác nhận. Tối đa 10 người mỗi bàn.', photo: 'assets/photos/facade-giang-vo.jpg', cta: 'Đặt bàn tri ân', days: range(18, 20) },
+  { id: 'thu-sau', cat: 'dip', tag: 'Hóa đơn 800K — voucher 100K', title: 'Cuối tháng, mâm vẫn đầy', desc: 'Hóa đơn từ 800K nhận voucher 100K cho lần ghé sau trong tháng 12.', when: '27 – 29/11', where: 'Cả 6 đảo', cond: 'Voucher dùng từ 01/12 – 31/12/2026, 1 voucher mỗi hóa đơn.', photo: 'assets/photos/food-ban-tiec.jpg', cta: 'Đặt bàn ngay', days: range(27, 29) },
+  { id: 'giao-hang', cat: 'giaohang', tag: 'Đơn từ 300K — miễn phí giao', title: 'Koh giao tận nhà, cay vẫn đủ', desc: 'Đặt qua Zalo OA Koh Yam, đơn từ 300K miễn phí giao trong bán kính 5 km.', when: '10:00 – 21:00 · cả tháng', where: 'Cả 6 đảo · qua Zalo OA', cond: 'Chỉ áp dụng đặt trực tiếp qua Zalo OA hoặc hotline, không áp dụng app giao hàng.', photo: 'assets/photos/facade-2d-quang-trung.jpg', cta: 'Đặt giao hàng', days: all() }
+];
+
+const ISLANDS = [
+  { slug: 'giang-vo', short: 'Giảng Võ', title: 'Rừng Giòn: gắp trước, kẻo hết', desc: 'Bàn từ 3 người tặng 1 đĩa khoai môn chiên giòn.', when: 'Cả tháng 11', address: '116K1 Giảng Võ' },
+  { slug: 'quang-trung-34a', short: '34A Q.Trung', title: 'Biển Đỏ: ra khơi cùng cả bàn', desc: 'Lẩu Tom Yum hải sản giảm 15% cho bàn từ 6 người.', when: 'Thứ 6 – Chủ nhật', address: '34A Quang Trung' },
+  { slug: 'quang-trung-2d', short: '2D Q.Trung', title: 'Tặng chè khúc bạch Thái', desc: 'Mỗi hóa đơn từ 500K tặng 1 phần chè tráng miệng.', when: 'Cả tháng 11', address: '2D Quang Trung' },
+  { slug: 'ba-trieu', short: 'Bà Triệu', title: 'Suối Thảo Mộc: trà sả miễn phí', desc: 'Trà sả gừng nóng miễn phí cho cả bàn khi trời trở lạnh.', when: 'Thứ 2 – Thứ 5', address: 'Bà Triệu' },
+  { slug: 'ho-tung-mau', short: 'Hồ Tùng Mậu', title: 'Sông Băng: mát giữa mâm cay', desc: 'Thêm 1 ly trà Thái đá xay chỉ 19K khi gọi món cay.', when: 'Cả tháng 11', address: 'Hồ Tùng Mậu' },
+  { slug: 'ba-huyen-thanh-quan', short: 'BH Thanh Quan', title: 'Núi Lửa: hết sợ cay', desc: 'Ăn hết món cay cấp 5 được tặng 1 xôi xoài và lên bảng vàng của đảo.', when: 'Thứ 7 – Chủ nhật', address: 'Bà Huyện Thanh Quan' }
+];
+
+const FAQS = [
+  { q: 'Có được dùng nhiều ưu đãi cùng lúc không?', a: 'Mỗi hóa đơn dùng 1 ưu đãi chung. Ưu đãi riêng của từng đảo có thể cộng thêm, trừ khi điều kiện ghi khác.' },
+  { q: 'Có cần đặt bàn trước không?', a: 'Nên đặt trước cho bàn từ 4 người và các chương trình sinh nhật, 20/11. Nhắn mã ưu đãi khi đặt để Koh chuẩn bị sẵn.' },
+  { q: 'Ưu đãi có áp dụng cho ngày lễ không?', a: 'Các chương trình áp dụng theo đúng lịch đã ghi. Koh sẽ báo trước nếu có thay đổi trên Fanpage và Zalo OA.' },
+  { q: 'Đặt qua app giao hàng có được ưu đãi không?', a: 'Ưu đãi giao hàng chỉ áp dụng khi đặt trực tiếp qua Zalo OA Koh Yam hoặc hotline.' },
+  { q: 'Giá đã gồm VAT chưa?', a: 'Giá và mức giảm tính trên giá menu, chưa gồm VAT và phí dịch vụ (nếu có).' }
+];
+
+class Component extends DCLogic {
+  state = { cat: 'all', day: 7 };
+  renderVals() {
+    const { cat, day } = this.state;
+    const showPhotos = (this.props.cardStyle ?? 'photo') === 'photo';
+    const enrich = p => ({ ...p, anchor: 'ud-' + p.id, href: '#ud-' + p.id, catLabel: CATS[p.cat].label, catColor: CATS[p.cat].color });
+    const promos = PROMOS.map(enrich);
+    const visiblePromos = cat === 'all' ? promos : promos.filter(p => p.cat === cat);
+    const chipDefs = [{ id: 'all', label: 'Tất cả', color: '#28231c' }, ...Object.entries(CATS).map(([id, c]) => ({ id, ...c }))];
+    const chips = chipDefs.map(c => {
+      const active = c.id === cat;
+      return {
+        label: c.label, active,
+        count: c.id === 'all' ? promos.length : promos.filter(p => p.cat === c.id).length,
+        bg: active ? '#456534' : '#fcf7ef', fg: active ? '#fcf7ef' : '#28231c',
+        ring: active ? '0 3px 0 rgba(40,35,28,.18)' : 'inset 0 0 0 1px #e7c899',
+        dot: active ? '#d8a459' : c.color,
+        onClick: () => this.setState({ cat: c.id })
+      };
+    });
+    const cells = [];
+    for (let i = 0; i < 6; i++) cells.push({ empty: true, vis: 'hidden', n: '', dots: [], bg: 'transparent', fg: 'inherit', ring: 'none', cursor: 'default', aria: '', onClick: () => {} });
+    for (let d = 1; d <= 30; d++) {
+      const active = promos.filter(p => p.days.includes(d));
+      const sel = d === day, today = d === 7;
+      cells.push({
+        empty: false, vis: 'visible', n: d,
+        dots: [...new Set(active.map(p => p.catColor))].map(c => sel ? '#d8a459' : c),
+        bg: sel ? '#456534' : (today ? '#f8ecdd' : 'transparent'),
+        fg: sel ? '#fcf7ef' : '#28231c',
+        ring: sel ? '0 3px 0 rgba(40,35,28,.18)' : (today ? 'inset 0 0 0 1px #456534' : 'none'),
+        cursor: 'pointer', aria: `${d}/11, ${active.length} ưu đãi`,
+        onClick: () => this.setState({ day: d })
+      });
+    }
+    while (cells.length % 7) cells.push({ empty: true, vis: 'hidden', n: '', dots: [], bg: 'transparent', fg: 'inherit', ring: 'none', cursor: 'default', aria: '', onClick: () => {} });
+    const dayPromos = promos.filter(p => p.days.includes(day));
+    return {
+      heroTheme: this.props.heroTheme ?? 'xanh',
+      showPhotos, hidePhotos: !showPhotos,
+      showCalendar: this.props.showCalendar ?? true,
+      chips, visiblePromos,
+      countLabel: `${visiblePromos.length} chương trình`,
+      weekdays: ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'],
+      cells,
+      legend: Object.values(CATS),
+      selDayLabel: `${String(day).padStart(2, '0')}/11`,
+      selDowLabel: DOW_LABEL[dow(day)] + (day === 7 ? ' · Hôm nay' : ''),
+      selCount: dayPromos.length,
+      dayPromos, dayEmpty: dayPromos.length === 0,
+      islands: ISLANDS.map(i => ({ ...i, color: `var(--island-${i.slug})` })),
+      faqs: FAQS
+    };
+  }
+}
+</script>
+</body>
+</html>

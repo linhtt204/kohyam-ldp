@@ -1,0 +1,99 @@
+/* Koh Yam brand classes — ported verbatim from Koh-Yam-Design-System/components/bundle.css */
+.ky-row{display:flex;flex-wrap:wrap;gap:var(--space-4);align-items:center}
+/* CTA pill */
+.ky-cta{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2);font-family:var(--font-display);font-weight:700;font-size:20px;line-height:1.1;letter-spacing:0.02em;text-transform:uppercase;padding:var(--space-3) var(--space-6);border-radius:var(--radius-pill);border:0;cursor:pointer;background:var(--cta);color:var(--on-cta);box-shadow:var(--shadow-sticker);text-decoration:none}
+.ky-cta:focus-visible{outline:2px solid var(--focus-ring);outline-offset:3px}
+.ky-cta--sm{font-size:14px;padding:var(--space-2) var(--space-4)}
+.ky-cta--outline{background:transparent;color:var(--brand);box-shadow:inset 0 0 0 2px var(--brand)}
+.ky-cta--stack{flex-direction:column;gap:2px;background:var(--koh-cream-50);color:var(--koh-green-900);padding:var(--space-3) var(--space-12)}
+.ky-cta--stack small{font-size:0.75em;color:var(--stack-small,var(--koh-green-700));letter-spacing:0.04em}
+.ky-cta--stack strong{font-size:1.35em;color:var(--koh-gold-700)}
+/* Promo tag */
+.ky-promo{display:inline-flex;align-items:center;gap:var(--space-2);background:var(--promo);color:var(--on-promo);font-family:var(--font-display);font-weight:700;font-size:22px;line-height:1.15;padding:var(--space-3) var(--space-6);border-radius:var(--radius-md)}
+.ky-promo b{font-weight:700}
+.ky-promo--sm{font-size:14px;padding:var(--space-1) var(--space-3);border-radius:var(--radius-sm)}
+.ky-promo-number{font-family:var(--font-display);font-weight:700;font-size:120px;line-height:0.9;letter-spacing:-0.02em;color:var(--ink);display:inline-flex;align-items:flex-start}
+.ky-promo-number sup{font-size:0.42em;line-height:1;margin-left:0.04em}
+.ky-promo-number em{font-style:normal;font-size:0.42em;align-self:flex-end;line-height:1.1;margin-left:0.04em;color:var(--highlight)}
+/* Location tag */
+.ky-location{display:inline-flex;align-items:center;gap:var(--space-2);background:var(--koh-cream-50);color:var(--koh-brown-900);font-family:var(--font-display);font-weight:700;font-size:15px;letter-spacing:0.04em;text-transform:uppercase;padding:var(--space-2) var(--space-6) var(--space-2) var(--space-4);border-radius:var(--radius-pill);box-shadow:var(--shadow-sticker)}
+.ky-location svg{width:18px;height:18px;flex:none;fill:var(--pin,var(--koh-chili-700))}
+/* Island scope variables */
+[data-island="giang-vo"]{--island:var(--island-giang-vo);--island-alt:var(--island-giang-vo-alt);--island-on:var(--island-giang-vo-on);--stamp-ink:var(--island-giang-vo-ink);--pin:var(--island-giang-vo-ink)}
+[data-island="quang-trung-34a"]{--island:var(--island-quang-trung-34a);--island-alt:var(--island-quang-trung-34a-alt);--island-on:var(--island-quang-trung-34a-on);--stamp-ink:var(--island-quang-trung-34a-ink);--pin:var(--island-quang-trung-34a-ink)}
+[data-island="quang-trung-2d"]{--island:var(--island-quang-trung-2d);--island-alt:var(--island-quang-trung-2d-alt);--island-on:var(--island-quang-trung-2d-on);--stamp-ink:var(--island-quang-trung-2d-ink);--pin:var(--island-quang-trung-2d-ink)}
+[data-island="ba-trieu"]{--island:var(--island-ba-trieu);--island-alt:var(--island-ba-trieu-alt);--island-on:var(--island-ba-trieu-on);--stamp-ink:var(--island-ba-trieu-ink);--pin:var(--island-ba-trieu-ink)}
+[data-island="ho-tung-mau"]{--island:var(--island-ho-tung-mau);--island-alt:var(--island-ho-tung-mau-alt);--island-on:var(--island-ho-tung-mau-on);--stamp-ink:var(--island-ho-tung-mau-ink);--pin:var(--island-ho-tung-mau-ink)}
+[data-island="ba-huyen-thanh-quan"]{--island:var(--island-ba-huyen-thanh-quan);--island-alt:var(--island-ba-huyen-thanh-quan-alt);--island-on:var(--island-ba-huyen-thanh-quan-on);--stamp-ink:var(--island-ba-huyen-thanh-quan-ink);--pin:var(--island-ba-huyen-thanh-quan-ink)}
+/* Postage-stamp frame */
+.ky-stamp{--stamp-bg:var(--koh-gold-500);--hole:5px;--pitch:14px;display:inline-block;padding:9px;background:radial-gradient(circle at center,transparent var(--hole),var(--stamp-bg) calc(var(--hole) + 0.5px)) calc(var(--pitch) / -2) calc(var(--pitch) / -2) / var(--pitch) var(--pitch);filter:drop-shadow(0 3px 0 rgba(40,35,28,0.18))}
+.ky-stamp__face{background:var(--stamp-bg);padding:var(--space-3) var(--space-4);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ky-stamp__face img{display:block;height:56px;width:auto}
+[data-stamp="cream"]{--stamp-bg:var(--koh-cream-100)}
+[data-stamp="green"]{--stamp-bg:var(--koh-green-700)}
+[data-stamp="island"]{--stamp-bg:var(--island)}
+/* Passport island stamp */
+.ky-island-stamp{width:168px;height:168px;border-radius:50%;color:var(--stamp-ink);border:3px solid currentColor;display:grid;place-items:center;position:relative;transform:rotate(-8deg);font-family:var(--font-display);text-align:center;background:transparent}
+.ky-island-stamp::before{content:"";position:absolute;inset:7px;border-radius:50%;border:1.5px dashed currentColor}
+.ky-island-stamp__body{display:flex;flex-direction:column;align-items:center;gap:2px;padding:0 18px}
+.ky-island-stamp__kicker{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase}
+.ky-island-stamp__name{font-size:22px;font-weight:700;line-height:1;text-transform:uppercase}
+.ky-island-stamp__sub{font-size:11px;font-weight:600;line-height:1.2}
+.ky-island-stamp__date{margin-top:4px;font-size:10px;font-weight:700;letter-spacing:0.1em;border-top:1.5px solid currentColor;padding-top:3px}
+/* Postmark */
+.ky-postmark{width:112px;height:112px;color:var(--koh-brown-900)}
+.ky-postmark text{font-family:var(--font-display);font-weight:700;font-size:11.5px;letter-spacing:0.08em;text-transform:uppercase;fill:currentColor}
+/* Logo tab */
+.ky-logo-tab{display:inline-flex;flex-direction:column;align-items:center;background:var(--tab-bg,var(--koh-green-900));padding:var(--space-6) var(--space-6) var(--space-4);border-radius:0 0 0 var(--radius-lg)}
+.ky-logo-tab img{height:88px;width:auto;display:block}
+/* Landmark card */
+.ky-landmark{--land:var(--koh-chili-700);--land-on:var(--koh-cream-50);width:300px;background:var(--koh-cream-50);color:var(--koh-brown-900);border-radius:var(--radius-md);overflow:hidden;box-shadow:0 0 0 1px var(--line),var(--shadow-sticker);font-family:var(--font-text)}
+.ky-landmark__head{background:var(--land);color:var(--land-on);padding:var(--space-4) var(--space-6)}
+.ky-landmark__kicker{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;opacity:0.9}
+.ky-landmark__name{font-family:var(--font-display);font-size:30px;font-weight:700;line-height:1.1;margin-top:2px}
+.ky-landmark__dish{font-size:14px;font-weight:500;margin-top:2px}
+.ky-landmark__quote{font-family:var(--font-script);font-size:40px;line-height:0.9;color:var(--koh-green-700);padding:var(--space-4) var(--space-6) 0}
+.ky-landmark__rows{list-style:none;margin:0;padding:var(--space-3) var(--space-6) var(--space-6);display:grid;gap:var(--space-2)}
+.ky-landmark__rows li{display:grid;grid-template-columns:92px 1fr;gap:var(--space-2);font-size:13px;line-height:1.45;border-top:1px dashed var(--line);padding-top:var(--space-2)}
+.ky-landmark__rows span{font-weight:600;color:var(--koh-brown-600)}
+[data-landmark="nui-lua"]{--land:var(--koh-chili-700)}
+[data-landmark="bien-do"]{--land:var(--koh-coral-600);--land-on:var(--koh-cream-50)}
+[data-landmark="suoi-thao-moc"]{--land:var(--koh-green-700)}
+[data-landmark="song-bang"]{--land:var(--koh-green-100);--land-on:var(--koh-green-900)}
+[data-landmark="rung-gion"]{--land:var(--koh-gold-500);--land-on:var(--koh-brown-900)}
+/* Pattern band */
+.ky-pattern-band{height:56px;background-repeat:repeat-x;background-size:auto 100%}
+/* Social post frame */
+.ky-post{--post:540px;width:var(--post);height:var(--post);position:relative;overflow:hidden;background:var(--surface);font-family:var(--font-display);color:var(--ink)}
+.ky-post__photo{position:absolute;left:8%;right:8%;top:10%;bottom:13%;border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 0 0 6px var(--koh-cream-50)}
+.ky-post__photo img{width:100%;height:100%;object-fit:cover;display:block}
+.ky-post__tab{position:absolute;top:0;right:0}
+.ky-post__tab .ky-logo-tab{padding:14px 16px 12px}
+.ky-post__tab .ky-logo-tab img{height:78px}
+.ky-post__cta{position:absolute;left:50%;bottom:6%;transform:translateX(-50%)}
+.ky-post__pattern{position:absolute;left:0;right:0;bottom:0;height:28px;opacity:0.5;background-repeat:repeat-x;background-size:auto 100%}
+/* Island card */
+.ky-island-card{width:210px;border-radius:var(--radius-md);overflow:hidden;background:var(--koh-cream-50);box-shadow:0 0 0 1px var(--line);font-family:var(--font-text);color:var(--koh-brown-900)}
+.ky-island-card__face{height:104px;background:var(--island);color:var(--island-on);padding:var(--space-4);display:flex;flex-direction:column;justify-content:space-between;position:relative}
+.ky-island-card__face::after{content:"";position:absolute;right:0;bottom:0;width:56px;height:36px;background:var(--island-alt);border-top-left-radius:var(--radius-md)}
+.ky-island-card__name{font-family:var(--font-display);font-weight:700;font-size:20px;line-height:1.05}
+.ky-island-card__addr{font-size:12px;font-weight:600;padding-right:60px;position:relative;z-index:1}
+.ky-island-card__meta{padding:var(--space-3) var(--space-4);font-size:12px;line-height:1.5}
+.ky-island-card__status{display:inline-block;font-size:11px;font-weight:700;letter-spacing:0.04em;padding:1px 8px;border-radius:var(--radius-pill);background:var(--koh-green-100);color:var(--koh-green-900)}
+.ky-island-card__status--draft{background:var(--koh-sand-200);color:var(--koh-brown-900)}
+/* Option comparison */
+.ky-compare{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6);font-family:var(--font-text)}
+.ky-compare__col{background:var(--koh-cream-50);border-radius:var(--radius-md);box-shadow:0 0 0 1px var(--line);padding:var(--space-6);color:var(--koh-brown-900)}
+.ky-compare__col--pick{box-shadow:0 0 0 3px var(--koh-green-700)}
+.ky-compare__title{font-family:var(--font-display);font-size:22px;font-weight:700;line-height:1.2}
+.ky-compare__badge{display:inline-block;margin-left:var(--space-2);font-size:11px;font-weight:700;padding:2px 8px;border-radius:var(--radius-pill);background:var(--koh-green-700);color:var(--koh-cream-50);vertical-align:middle}
+.ky-compare__swatches{display:flex;height:36px;border-radius:var(--radius-sm);overflow:hidden;margin:var(--space-4) 0}
+.ky-compare__swatches span{display:block}
+.ky-compare__posts{display:flex;gap:var(--space-3)}
+.ky-compare__posts .ky-post{width:210px;height:210px;border-radius:var(--radius-sm)}
+.ky-compare__posts .ky-post__photo{box-shadow:0 0 0 3px var(--koh-cream-50);border-radius:14px}
+.ky-compare__posts .ky-logo-tab{padding:6px 7px 5px;border-radius:0 0 0 14px}
+.ky-compare__posts .ky-logo-tab img{height:30px}
+.ky-compare__posts .ky-cta--stack{font-size:9px;padding:4px 14px;box-shadow:none}
+.ky-compare__list{margin:var(--space-4) 0 0;padding-left:18px;font-size:13px;line-height:1.55}
+.ky-compare__list li::marker{color:var(--koh-brown-600)}

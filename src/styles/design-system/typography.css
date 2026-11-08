@@ -1,0 +1,36 @@
+:root{
+/* Families are self-hosted through next/font — see src/app/fonts.ts */
+--font-display:var(--font-alternates),system-ui,sans-serif;
+--font-text:var(--font-montserrat),var(--font-alternates),system-ui,sans-serif;
+--font-script:var(--font-allison),cursive;
+--type-promo-number:700 120px/0.9 var(--font-display);
+--type-hero:500 64px/1.2 var(--font-display);
+--type-hero-light:300 64px/1.2 var(--font-display);
+--type-h1:500 44px/1.2 var(--font-display);
+--type-h2:500 30px/1.2 var(--font-display);
+--type-h3:700 22px/1.2 var(--font-display);
+--type-cta:700 20px/1.1 var(--font-display);
+--type-eyebrow:700 13px/1.3 var(--font-display);
+--type-body-lg:500 18px/1.4 var(--font-text);
+--type-body:500 15px/1.4 var(--font-text);
+--type-body-strong:700 15px/1.4 var(--font-text);
+--type-caption:500 12px/1.4 var(--font-text);
+--type-label:700 12px/1.3 var(--font-text);
+--type-script-xl:400 96px/0.8 var(--font-script);
+--type-script-lg:400 64px/0.8 var(--font-script);
+}
+.promo-number{font:var(--type-promo-number)}
+.hero{font:var(--type-hero)}
+.hero-light{font:var(--type-hero-light)}
+.h1{font:var(--type-h1)}
+.h2{font:var(--type-h2)}
+.h3{font:var(--type-h3)}
+.cta{font:var(--type-cta);letter-spacing:0.02em;text-transform:uppercase}
+.eyebrow{font:var(--type-eyebrow);letter-spacing:0.1em;text-transform:uppercase}
+.body-lg{font:var(--type-body-lg)}
+.body{font:var(--type-body)}
+.body-strong{font:var(--type-body-strong)}
+.caption{font:var(--type-caption);letter-spacing:0.01em}
+.label{font:var(--type-label);letter-spacing:0.01em}
+.script-xl{font:var(--type-script-xl)}
+.script-lg{font:var(--type-script-lg)}
